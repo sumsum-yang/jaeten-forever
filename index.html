@@ -9,6 +9,56 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+<!-- LOCK SCREEN -->
+<section class="lock-screen" id="lockScreen">
+  <div class="lock-overlay"></div>
+
+  <div class="lock-status">
+    <span id="lockStatusTime">9:41</span>
+    <span>● ● ● ▰</span>
+  </div>
+
+  <div class="lock-clock">
+    <p id="lockDate">SUNDAY, OCTOBER 25</p>
+    <h1 id="lockTime">9:41</h1>
+    <p class="lock-greeting">A little secret, just for you.</p>
+  </div>
+
+  <div class="passcode-area">
+    <div class="lock-icon">⌑</div>
+    <p class="passcode-title">Enter Passcode</p>
+
+    <div class="passcode-dots" id="passcodeDots">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <p class="passcode-error" id="passcodeError">
+      Enter your 4-digit passcode
+    </p>
+
+    <div class="keypad">
+      <button type="button" data-digit="1">1</button>
+      <button type="button" data-digit="2">2</button>
+      <button type="button" data-digit="3">3</button>
+      <button type="button" data-digit="4">4</button>
+      <button type="button" data-digit="5">5</button>
+      <button type="button" data-digit="6">6</button>
+      <button type="button" data-digit="7">7</button>
+      <button type="button" data-digit="8">8</button>
+      <button type="button" data-digit="9">9</button>
+      <span class="keypad-empty"></span>
+      <button type="button" data-digit="0">0</button>
+      <button type="button" data-action="delete" class="delete-key">⌫</button>
+    </div>
+  </div>
+
+  <p class="lock-bottom-text">He misses me everyday.♡</p>
+</section>
+
   <main class="phone">
 
     <header class="topbar">
