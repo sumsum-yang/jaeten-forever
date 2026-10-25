@@ -1,0 +1,262 @@
+
+:root {
+  --background: #f5f5f5;
+  --surface: #ffffff;
+  --text: #252525;
+  --muted: #929292;
+  --line: #e5e5e5;
+  --soft: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.phone {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 24px 22px 32px;
+  background:
+    radial-gradient(ellipse at top right, #ffffff 0%, transparent 55%),
+    var(--background);
+  position: relative;
+  overflow: hidden;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-mark {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.topbar-label,
+.topbar-dot,
+.eyebrow,
+.cover-caption,
+.home-footer {
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+
+.topbar-label {
+  color: var(--muted);
+}
+
+.topbar-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #555555;
+}
+
+.intro {
+  padding: 36px 0 25px;
+}
+
+.eyebrow {
+  color: var(--muted);
+  margin: 0 0 13px;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: clamp(38px, 10vw, 54px);
+  line-height: 0.98;
+  font-weight: 650;
+  letter-spacing: -2.8px;
+}
+
+.period {
+  color: #999999;
+}
+
+.subtitle {
+  color: #777777;
+  font-size: 13px;
+  margin: 16px 0 0;
+}
+
+.cover-wrap {
+  margin-bottom: 34px;
+}
+
+.cover-image {
+  width: 100%;
+  height: clamp(170px, 48vw, 270px);
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+  background: var(--soft);
+}
+
+.cover-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  padding-top: 11px;
+  font-size: 8px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 7px;
+}
+
+.section-heading h2 {
+  font-size: 26px;
+  letter-spacing: -1px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.heading-mark {
+  color: var(--muted);
+  font-size: 22px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.app {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.app-icon {
+  width: clamp(48px, 13vw, 60px);
+  height: clamp(48px, 13vw, 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #ffffff, #e9e9e9);
+  box-shadow: 0 5px 14px #00000008;
+  font-size: 25px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.app-name {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.app-description {
+  margin-top: 5px;
+  font-size: 9px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.app:active {
+  transform: scale(0.97);
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #a0a0a0;
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 17px;
+  font-size: 8px;
+}
+
+.app-view {
+  min-height: 70vh;
+  padding-top: 28px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.back-button {
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  color: #666666;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#appContent h2 {
+  margin: 25px 0 8px;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+#appContent > p {
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.home-indicator {
+  width: 105px;
+  height: 4px;
+  border-radius: 10px;
+  background: #292929;
+  margin: 36px auto 0;
+}
+
+@media (min-width: 700px) {
+  .phone {
+    max-width: 480px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
