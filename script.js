@@ -13,12 +13,12 @@ const photos = [
 
 const posts = [
   {
-    src: "cover.jpg",
+    src: "Ten-2.jpg",
     caption: "somewhere in my favorite little universe ♡",
     likes: 128
   },
   {
-    src: "cover.jpg",
+    src: "Ten-2.jpg",
     caption: "collecting moments, not things.",
     likes: 86
   }
