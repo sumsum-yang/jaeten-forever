@@ -811,20 +811,3 @@ a {
   color: white;
   font-size: 19px;
 }
-
-/* ===== SMALL SCREENS ===== */
-
-@media (max-width: 360px) {
-  .phone {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .app-grid {
-    gap: 8px;
-  }
-
-  .app-description {
-    font-size: 8px;
-  }
-}
